@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset'
+
 export const profile = {
   name: 'Anirudh Suryawanshi',
   firstName: 'Anirudh',
@@ -167,7 +169,7 @@ export const projects = [
     title: 'BankNova',
     category: 'java',
     tags: ['Java', 'Spring Boot', 'Kafka', 'Spring AI'],
-    image: '/img/project-banknova.png',
+    image: asset('img/project-banknova.png'),
     description:
       'Enterprise digital banking platform with multi-module microservices (auth, accounts, transfers, loans, notifications, AI), Spring Cloud Gateway, PostgreSQL, Kafka sagas, JWT/OAuth, and a Spring AI RAG assistant.',
     link: 'https://github.com/Anirudh-108',
@@ -177,7 +179,7 @@ export const projects = [
     title: 'OrderSphere',
     category: 'java',
     tags: ['Spring Boot', 'Kafka', 'Docker', 'Redis'],
-    image: '/img/project-ordersphere.png',
+    image: asset('img/project-ordersphere.png'),
     description:
       'E-commerce order processing microservices with Spring Cloud Gateway, JWT RBAC, PostgreSQL, Redis, Kafka Saga/outbox, idempotent payments, Docker, and Azure Pipelines CI/CD.',
     link: 'https://github.com/Anirudh-108',
@@ -187,7 +189,7 @@ export const projects = [
     title: 'Health Care System',
     category: 'java',
     tags: ['Java', 'Swing', 'Oracle'],
-    image: '/img/project-healthcare.png',
+    image: asset('img/project-healthcare.png'),
     description:
       'Healthcare system with Java Swing, AWT, Joda API, and Oracle Database for patient and clinic data management.',
     link: 'https://github.com/Anirudh-108/Sanjeevani.git',
@@ -197,7 +199,7 @@ export const projects = [
     title: 'AskTrack',
     category: 'ai',
     tags: ['AI', 'RAG', 'React', 'FastAPI'],
-    image: '/img/project-asktrack.png',
+    image: asset('img/project-asktrack.png'),
     description:
       'Full-stack AI chatbot for document Q&A with RAG and semantic search. Upload PDF/TXT/DOC/DOCX, ask questions with FAISS vector retrieval, conversational memory, and source citations — built with React, TypeScript, and FastAPI.',
     link: 'https://github.com/Anirudh-108/AskTrack/tree/main',
@@ -207,7 +209,7 @@ export const projects = [
     title: 'Dice Game',
     category: 'web',
     tags: ['Web App', 'HTML/CSS/JS'],
-    image: '/img/project-dicegame.png',
+    image: asset('img/project-dicegame.png'),
     description:
       'Engaging dice game with rolling animations and an intuitive interface built with HTML, CSS, and JavaScript.',
     link: 'https://anirudh-108.github.io/Dice-Game/',
@@ -217,7 +219,7 @@ export const projects = [
     title: 'Infirmary Handling',
     category: 'c',
     tags: ['C', 'File Handling'],
-    image: '/img/project-infirmary.png',
+    image: asset('img/project-infirmary.png'),
     description:
       'Menu-driven C program to manage doctors, nurses, patients, and medicines using file handling.',
     link: 'https://github.com/Anirudh-108/Infirmary-Handling',

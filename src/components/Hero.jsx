@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { profile } from '../data/content'
 import { useInView } from '../hooks/useScroll'
+import { asset } from '../utils/asset'
 
 function RotatingWords({ words }) {
   const containerRef = useRef(null)
@@ -135,7 +136,7 @@ export default function Hero() {
             <span />
             <span />
             <div className="glowing-circle__image">
-              <img src="/img/profile-image.png" alt={profile.name} />
+              <img src={asset('img/profile-image.png')} alt={profile.name} />
             </div>
           </div>
         </div>

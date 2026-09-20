@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://Anirudh-108.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

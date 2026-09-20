@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { navLinks } from '../data/content'
+import { asset } from '../utils/asset'
 
 export default function Navbar({ activeSection }) {
   const [scrolled, setScrolled] = useState(false)
@@ -25,7 +26,7 @@ export default function Navbar({ activeSection }) {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <a href="#home" className="navbar__logo" onClick={handleNav}>
-          <img src="/img/logo.png" alt="AS logo" className="navbar__logo-img" />
+          <img src={asset('img/logo.png')} alt="AS logo" className="navbar__logo-img" />
           <span className="navbar__brand">
             Anirudh
             <small>Developer & Engineer</small>

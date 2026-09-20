@@ -1,5 +1,6 @@
 import { profile } from '../data/content'
 import { useInView } from '../hooks/useScroll'
+import { asset } from '../utils/asset'
 
 export default function Footer() {
   const [ref, inView] = useInView(0.05)
@@ -10,7 +11,7 @@ export default function Footer() {
       <div className="footer__grid reveal">
         <div className="footer__brand">
           <a href="#home" className="navbar__logo">
-            <img src="/img/logo.png" alt="AS logo" className="navbar__logo-img" />
+            <img src={asset('img/logo.png')} alt="AS logo" className="navbar__logo-img" />
             <span className="navbar__brand">
               Anirudh
               <small>Developer & Engineer</small>
