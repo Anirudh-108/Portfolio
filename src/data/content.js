@@ -19,7 +19,7 @@ export const profile = {
   twitter: 'https://twitter.com/ani_rudh108',
   facebook: 'https://www.facebook.com/anirudh.suryawanshi.568/',
   resume:
-    'https://drive.google.com/file/d/1NN7x2b-NA2qoWqEp2tEZ60GHVL-hriw6/view?usp=drive_link',
+    'https://drive.google.com/file/d/1yQnMX8dL3YEShnuWz0u5Kt3dfTOzuOMB/view?usp=sharing',
   location: 'Chennai, India',
   availability: 'Open to opportunities',
   heroTagline:
