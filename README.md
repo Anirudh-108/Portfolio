@@ -1,177 +1,55 @@
-# Personal Portfolio Website
+# Anirudh Suryawanshi — Developer Portfolio
 
-A modern, responsive personal portfolio website showcasing skills, projects, education, and professional experience. Built with HTML5, CSS3, and JavaScript, featuring smooth animations, interactive elements, and a clean design.
+React + Vite portfolio featuring a modern dark layout, typed hero roles, services, education, filterable projects, and a contact form.
 
-## 🌟 Features
+**Live site:** https://Anirudh-108.github.io/Portfolio/
 
-- **Responsive Design**: Fully responsive layout that works seamlessly across all devices (desktop, tablet, mobile)
-- **Smooth Animations**: Scroll-triggered animations and smooth transitions throughout the site
-- **Dynamic Text Animation**: Animated role changes in the hero section
-- **Interactive Skills Display**: 
-  - Technical skills with animated progress bars
-  - Professional skills with circular progress indicators
-- **Project Filtering**: Interactive project gallery with category-based filtering using MixItUp.js
-- **Sticky Navigation**: Fixed navigation bar with active section highlighting
-- **Mobile Menu**: Hamburger menu for mobile devices
-- **Social Media Integration**: Quick links to LinkedIn, Twitter, Facebook, and GitHub
-- **Contact Form**: User-friendly contact section for inquiries
+## Stack
 
-## 🛠️ Technologies Used
+- React 19
+- Vite 6
+- CSS (custom design system)
+- Boxicons
 
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Custom animations, flexbox, grid, and responsive design
-- **JavaScript (ES6+)**: Interactive functionality and dynamic content
-- **MixItUp.js**: Project filtering and sorting
-- **Boxicons**: Icon library for social media and UI elements
+## Getting started
 
-## 📂 Project Structure
-
-```
-Portfolio/
-│
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet with all custom CSS
-├── script.js           # JavaScript for interactivity
-├── mixitup.js          # MixItUp library for project filtering
-├── README.md           # Project documentation
-│
-└── img/                # Images folder
-    ├── icon2.png       # Favicon
-    ├── profile-image.png  # Profile picture
-    └── 1.jpg - 6.jpg   # Project thumbnails
+```bash
+npm install
+npm run dev
 ```
 
-## 🎨 Sections Overview
+Build for production:
 
-### 1. **Home**
-- Animated hero section with dynamic role text
-- Professional introduction
-- Contact information (Email, LinkedIn)
-- Call-to-action buttons (Resume, Hire Me)
-- Social media links
+```bash
+npm run build
+npm run preview
+```
 
-### 2. **About**
-- Personal introduction and background
-- Coding achievements:
-  - 300+ problems solved on CodeChef
-  - 250+ problems solved on LeetCode
-  - 200+ problems solved on GeeksforGeeks
-- Professional expertise overview
+## Deploy to GitHub Pages
 
-### 3. **Education**
-- B.Tech in Information Technology (CGPA: 8.76)
-- 12th Grade (CBSE) - 76%
-- 10th Grade (CBSE) - 67%
-- Links to academic certificates
+This repo is configured for GitHub Pages at `/Portfolio/` via GitHub Actions (`.github/workflows/deploy.yml`).
 
-### 4. **Skills**
-**Technical Skills:**
-- Core Java (80%)
-- C++ (75%)
-- C (82%)
-- HTML (80%)
-- CSS (76%)
-- JavaScript (72%)
+1. Push these changes to `main`.
+2. In the GitHub repo: **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Open the **Actions** tab and confirm the **Deploy to GitHub Pages** workflow succeeds.
+5. Visit https://Anirudh-108.github.io/Portfolio/
 
-**Professional Skills:**
-- Team Work (80%)
-- Problem Solving (75%)
-- Communication (78%)
-- Management (72%)
-- Leadership (76%)
-- Presentation (74%)
+You can also run the workflow manually from **Actions → Deploy to GitHub Pages → Run workflow**.
 
-### 5. **Portfolio**
-Featured projects with filtering options:
-- **Health Care System** (Java) - Healthcare management system with Java Swing and Oracle DB
-- **Drum Kit** (Web App) - Interactive virtual drum kit
-- **Dice Game** (Web App) - Engaging dice game with animations
-- **Infirmary Handling** (C) - Record management system using file handling
-- **Barber Shop** (Web App) - Static website for a barber shop
-- **Animated Website** (Web App) - Visually stunning one-page website
+## Project structure
 
-### 6. **Contact**
-- Contact form for direct communication
-- Fields: Name, Email, Address, Phone, Message
+```
+src/
+  components/   # Navbar, Hero, About, Services, Education, Projects, Contact, Footer
+  data/         # Portfolio content
+  hooks/        # Scroll / intersection helpers
+  utils/        # Helpers (asset base path)
+public/img/     # Static images
+```
 
-## 🚀 Getting Started
+## Customize
 
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required
+Edit `src/data/content.js` for name, links, skills, services, education, and projects.
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Anirudh-108/Portfolio.git
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd Portfolio
-   ```
-
-3. **Open the website**
-   - Simply open `index.html` in your web browser
-   - Or use a local server:
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
-     
-     # Using Node.js with http-server
-     npx http-server
-     ```
-
-4. **View in browser**
-   - Open `http://localhost:8000` in your browser
-
-## 🎯 Key Functionalities
-
-### Animated Text
-The home section features rotating text animation showcasing different roles:
-- IT Student
-- Java Developer
-- Frontend Developer
-
-### Project Filtering
-Click on category buttons to filter projects:
-- All
-- Java
-- Web App
-- C
-
-### Scroll Animations
-Smooth reveal animations triggered when scrolling to different sections using Intersection Observer API.
-
-### Active Navigation
-Navigation menu automatically highlights the current section as you scroll through the page.
-
-## 📱 Responsive Design
-
-The website is fully responsive with breakpoints for:
-- Mobile devices (< 768px)
-- Tablets (768px - 1024px)
-- Desktop (> 1024px)
-
-## 🤝 Connect
-
-- **Email**: anirudhsuryawanshi759@gmail.com
-- **LinkedIn**: [Anirudh Suryawanshi](https://www.linkedin.com/in/anirudh-suryawanshi-b34531218/)
-- **GitHub**: [@Anirudh-108](https://github.com/Anirudh-108)
-- **Twitter**: [@ani_rudh108](https://twitter.com/ani_rudh108)
-- **Facebook**: [Anirudh Suryawanshi](https://www.facebook.com/anirudh.suryawanshi.568/)
-
-## 📄 License
-
-Copyright © 2023 by Anirudh Suryawanshi. All Rights Reserved.
-
-## 🙏 Acknowledgments
-
-- [Boxicons](https://boxicons.com/) for the icon library
-- [MixItUp](https://www.kunkalabs.com/mixitup/) for the filtering functionality
-- Design inspiration from modern portfolio trends
-
----
-
-⭐ **Star this repository if you find it helpful!**
+If you rename the GitHub repository, update `base` in `vite.config.js` to match (`base: '/YourRepoName/'`).
