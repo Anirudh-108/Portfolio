@@ -18,17 +18,16 @@ export const profile = {
   leetcode: 'https://leetcode.com/u/Anirudh-108/',
   twitter: 'https://twitter.com/ani_rudh108',
   facebook: 'https://www.facebook.com/anirudh.suryawanshi.568/',
-  resume:
-    'https://drive.google.com/file/d/1yQnMX8dL3YEShnuWz0u5Kt3dfTOzuOMB/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1qaicex-slP1e908B5EmHjScAEvCT4vY-/view?usp=sharing',
   location: 'Chennai, India',
   availability: 'Open to opportunities',
   heroTagline:
-    'Software Engineer with 2+ years of experience in enterprise application development — backend engineering, RESTful APIs, cloud, Generative AI, and CI/CD.',
+    'Software Engineer with nearly 2 years of experience in enterprise application development — backend engineering, RESTful APIs, cloud, Generative AI, Agentic AI, and CI/CD.',
   aboutIntro:
-    'Software Engineer with 2+ years of experience in enterprise application development, with hands-on experience in backend engineering, RESTful APIs, cloud technologies, Generative AI, Agentic AI, and CI/CD. Currently specializing in Java and Spring Boot, with experience building backend applications using Spring MVC, Spring Data JPA, Hibernate, SQL, and microservices architecture.',
+    'Software Engineer with nearly 2 years of experience in enterprise application development, with hands-on experience in backend engineering, RESTful APIs, cloud technologies, Generative AI, Agentic AI, and CI/CD. Currently specializing in Java and Spring Boot, with experience building backend applications using Spring MVC, Spring Data JPA, Hibernate, SQL, and microservices architecture through enterprise-style personal projects.',
   aboutBody:
-    'Experienced with Node.js, Express.js, Git, Docker, Azure Cloud, and DevOps practices. Knowledgeable in Retrieval-Augmented Generation (RAG), LLMs, and LangChain. Passionate about delivering reliable, scalable systems that solve real business problems.',
-  techTags: ['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'Azure', 'Redis', 'Kafka'],
+    'Experienced with Node.js, Express.js, Git, Docker, Azure Cloud, and DevOps practices. Knowledgeable in Retrieval-Augmented Generation (RAG), LLMs, LangChain, and LangGraph. Passionate about delivering reliable, scalable systems that solve real business problems.',
+  techTags: ['Java', 'Spring Boot', 'Node.js', 'TypeScript', 'React', 'Azure', 'Redis', 'Kafka', 'LangGraph'],
   codingStats: [
     {
       value: '300+',
@@ -64,21 +63,32 @@ export const navLinks = [
   { href: '#experience', label: 'Experience' },
   { href: '#services', label: 'Services' },
   { href: '#education', label: 'Education' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
 ]
 
 export const experience = [
   {
-    role: 'Software Engineer — R&D Innovation Lab',
+    role: 'Software Engineer Level 2 — R&D Innovation Lab',
     company: 'Hexaware Technologies',
     location: 'Chennai, India',
-    period: 'Jul 2025 — Present',
+    period: 'Jul 2026 — Present',
     points: [
-      'Led a team of 3 engineers developing scalable backend solutions with Node.js, Express.js, RESTful APIs, and MongoDB.',
-      'Designed and enhanced backend APIs with validation, business logic, and exception handling — reducing API-related defects by 20%.',
-      'Built and maintained CI/CD pipelines for automated build, testing, and deployment — cutting manual deployment effort by 30%.',
-      'Worked with Azure App Service, Key Vault, Logic Apps, and Blob Storage — improving operational reliability by 25%.',
+      'Designed and integrated Agentic AI workflows and orchestration solutions into enterprise applications, improving workflow automation efficiency by 30% and reducing manual processing efforts by 25%.',
+      'Developed AI agents, LLM-powered workflows, and enterprise API integrations, optimizing orchestration, secure data exchange, error handling, and backend scalability while reducing workflow execution time by 20%.',
+    ],
+  },
+  {
+    role: 'Software Engineer Level 1 — R&D Innovation Lab',
+    company: 'Hexaware Technologies',
+    location: 'Chennai, India',
+    period: 'Jul 2025 — Jul 2026',
+    points: [
+      'Led a team of 3 engineers in developing and delivering scalable backend solutions using Node.js, Express.js, RESTful APIs, and MongoDB, ensuring reliable application performance and supporting business-critical functionality.',
+      'Designed and enhanced backend APIs with Express.js, implementing request validation, business logic, exception handling, and database integration — reducing API-related defects by 20% and improving maintainability.',
+      'Developed and maintained CI/CD pipelines for automated build, testing, and deployment processes — reducing manual deployment effort by 30% and improving release efficiency and deployment consistency.',
+      'Used Azure App Service, Key Vault, Logic Apps, and Blob Storage for cloud deployments and workflows — improving operational reliability by 25%.',
     ],
   },
   {
@@ -87,9 +97,9 @@ export const experience = [
     location: 'Chennai, India',
     period: 'Nov 2024 — Jul 2025',
     points: [
-      'Resolved 30+ critical backend and REST API defects in TypeScript and Express.js services, improving application stability.',
-      'Increased application performance by 40% through optimization of business logic, queries, and data access patterns.',
-      'Improved security by remediating SAST/SCA findings and reducing exposure to XSS, CSRF, and dependency risks.',
+      'Resolved 30+ critical backend and REST API defects in TypeScript and Express.js services through debugging, performance analysis, and database optimization, improving application stability.',
+      'Improved application performance by 40% through optimization of business logic, query execution, and data access patterns across Express.js and MongoDB services.',
+      'Improved application security by remediating vulnerabilities identified through SAST/SCA assessments, addressing XSS, CSRF, and third-party dependency risks through secure coding practices.',
     ],
   },
 ]
@@ -120,8 +130,8 @@ export const services = [
     icon: 'bx-chip',
     title: 'AI & GenAI',
     description:
-      'RAG assistants, LLMs, LangChain, and MCP-powered agentic workflows.',
-    points: ['RAG / LangChain', 'Spring AI', 'MCP Server'],
+      'RAG assistants, LLMs, LangChain, LangGraph, and MCP-powered agentic workflows.',
+    points: ['RAG / LangChain', 'LangGraph', 'Spring AI', 'MCP Server'],
   },
   {
     icon: 'bx-code-alt',
@@ -143,23 +153,89 @@ export const education = [
   {
     icon: 'bxs-graduation',
     title: 'B.Tech — Information Technology',
-    detail:
-      'Technocrats Institute of Technology, Bhopal (2020 — 2024). CGPA: 8.73.',
-    link: 'https://drive.google.com/file/d/1rLvHLn5qJ2aUE2rBbzpMhBPKd70MyddE/view?usp=sharing',
+    school: 'Technocrats Institute of Technology, Bhopal',
+    period: '2020 — 2024',
+    result: 'CGPA 8.73',
   },
   {
     icon: 'bxs-school',
     title: 'Twelfth Grade — CBSE',
-    detail:
-      'Kendriya Vidyalaya, Seoni. Maths & Science focus. Score: 76%.',
-    link: 'https://drive.google.com/file/d/1mNrpgOhD5t1dKLyyNfY80hUgSfZUV1lv/view?usp=drive_link',
+    school: 'Kendriya Vidyalaya, Seoni',
+    period: 'Maths & Science',
+    result: 'Score 76%',
   },
   {
     icon: 'bxs-buildings',
     title: 'Tenth Grade — CBSE',
-    detail:
-      'Kendriya Vidyalaya, Seoni. Score: 67%.',
-    link: 'https://drive.google.com/file/d/12LV9aQF7cwX_lErVCvQVdK9LHT-uix81/view?usp=sharing',
+    school: 'Kendriya Vidyalaya, Seoni',
+    period: 'Secondary',
+    result: 'Score 67%',
+  },
+]
+
+export const certifications = [
+  {
+    icon: 'bx-bot',
+    title: 'Claude Certified Developer — Foundations',
+    issuer: 'Anthropic',
+    validity: "Aug'26 to Aug'27",
+    link: 'https://drive.google.com/file/d/133ZokDKbDssWriz1jLujDgsdtbBdceHP/view?usp=sharing',
+  },
+  {
+    icon: 'bx-bot',
+    title: 'Claude Certified Associate — Foundations',
+    issuer: 'Anthropic',
+    validity: "Aug'26 to Aug'27",
+    link: 'https://drive.google.com/file/d/1rPmTUxq7MCbaXYEi_ZGQEJ5Glng87AJ_/view?usp=sharing',
+  },
+  {
+    icon: 'bxl-aws',
+    title: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    validity: "Jan'25 to Jan'28",
+    link: 'https://drive.google.com/file/d/12JyRbnzwPBRP9i-2EFOgC8u-j1BI3IYk/view?usp=sharing',
+  },
+  {
+    icon: 'bxl-microsoft',
+    title: 'Microsoft Certified: Azure Developer',
+    issuer: 'Futureskills Prime',
+    validity: "Oct'25 to Oct'26",
+    link: 'https://drive.google.com/file/d/1B1rxWwg-WQPurL9RK734VGi9PflE9Ph8/view?usp=sharing',
+  },
+  {
+    icon: 'bx-globe',
+    title: 'Web Development',
+    issuer: 'Techniche IIT Guwahati × 1stop',
+    validity: 'Jun–Jul 2022',
+    link: 'https://drive.google.com/file/d/1aektUl0k6RzZY5LgY5M4GhbhbOhqUv-3/view?usp=sharing',
+  },
+  {
+    icon: 'bx-code-alt',
+    title: 'Programming in Java by NPTEL',
+    issuer: 'National Programme on Technology Enhanced Learning',
+    validity: 'Jan–Apr 2023 · Elite 78%',
+    link: 'https://drive.google.com/file/d/1XUEjOcqMsM4-nn7l9XqWQC5iMwnzA2Ek/view?usp=sharing',
+  },
+  {
+    icon: 'bx-code-alt',
+    title: 'Programming in C++ by NPTEL',
+    issuer: 'National Programme on Technology Enhanced Learning',
+    validity: 'Jan–Apr 2023 · Elite 78%',
+    link: 'https://drive.google.com/file/d/1LZDTlCz4juKQcJhQ7kBYSbWRCguyzM_i/view?usp=sharing',
+  },
+  {
+    icon: 'bx-code-alt',
+    title: 'Data Structure and Algorithm Using Java by NPTEL',
+    issuer: 'NPTEL — IIT Kharagpur',
+    validity: 'Jan–Apr 2023 · Elite 78%',
+    link: 'https://drive.google.com/file/d/12wHU7_PHx2_XHI7aZez34L9xXB9iS21u/view?usp=sharing',
+  },
+  {
+    icon: 'bx-code-alt',
+    title: 'Problem Solving through Programming in C by NPTEL',
+    issuer: 'NPTEL — IIT Kharagpur',
+    validity: 'Jan–Apr 2023 · Elite 78%',
+    link: 'https://drive.google.com/file/d/1LZDTlCz4juKQcJhQ7kBYSbWRCguyzM_i/view?usp=sharing',
   },
 ]
 
@@ -171,7 +247,7 @@ export const projects = [
     tags: ['Java', 'Spring Boot', 'Kafka', 'Spring AI'],
     image: asset('img/project-banknova.png'),
     description:
-      'Enterprise digital banking platform with multi-module microservices (auth, accounts, transfers, loans, notifications, AI), Spring Cloud Gateway, PostgreSQL, Kafka sagas, JWT/OAuth, and a Spring AI RAG assistant.',
+      'Enterprise digital banking platform with multi-module Spring Boot microservices (auth, accounts, transfers, loans, notifications, AI), Spring Cloud Gateway, PostgreSQL, Flyway, Kafka saga orchestration, JWT/RBAC, OAuth 2.0, and a Spring AI RAG assistant with OpenAI embeddings and pgvector.',
     link: 'https://github.com/Anirudh-108',
   },
   {

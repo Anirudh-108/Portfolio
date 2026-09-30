@@ -1,0 +1,371 @@
+FS Custom APIs with their Example Responses for Different Geo locations
+=======================================================================
+
+1. /api/v1/candidate-metadata-auth/metadata/personal-details
+
+Example India Payload
+---------------------
+{
+  "personalDetails": {
+    "name": {
+      "firstName": "Rahul",
+      "middleName": "K",
+      "lastName": "Sharma"
+    },
+    "demographicInfo": {
+      "country": "IN",
+      "maritalStatus": "Married",
+      "marriageDate": "2020-06-15",
+      "gender": "Male",
+      "highestEducationLevel": "Bachelor",
+      "religion": "Hindu"
+    },
+    "biographicalInfo": {
+      "dateOfBirth": "15-06-1995",
+      "bloodType": "O+",
+      "age": 30
+    },
+    "disabilityInfo": "None",
+    "disabilityCountry": "India",
+    "fathersName": "Suresh",
+    "citizenship": [
+      {
+        "citizenship": "IN",
+        "status": "A",
+        "effectiveDate": "1995-06-15",
+        "fromDate": "1995-06-15",
+        "toDate": "4712-12-31"
+      }
+    ]
+  }
+}
+
+Example US Payload
+-------------------
+{
+  "personalDetails": {
+    "name": {
+      "firstName": "Erica",
+      "middleName": "A",
+      "lastName": "Smith",
+      "prefix": "Ms",
+      "suffix": "Jr",
+      "nameAsPerSSN": "Erica A Smith"
+    },
+    "demographicInfo": {
+      "country": "US",
+      "maritalStatus": "Single",
+      "gender": "Female",
+      "highestEducationLevel": "Master"
+    },
+    "biographicalInfo": {
+      "dateOfBirth": "20-03-1992",
+      "bloodType": "A+",
+      "age": 33
+    },
+    "disabilityInfo": "None",
+    "disabilityCountry": "United States",
+    "citizenship": [
+      {
+        "citizenship": "US",
+        "status": "A",
+        "fromDate": "1992-03-20",
+        "toDate": "4712-12-31"
+      }
+    ],
+    "ethnicity": ["1", "2"]
+  }
+}
+
+Example Canada Payload
+----------------------
+
+{
+  "personalDetails": {
+    "name": {
+      "firstName": "Jordan",
+      "middleName": "M",
+      "lastName": "Lee",
+      "prefix": "Mr",
+      "suffix": "",
+      "nameAsPerSIN": "Jordan M Lee"
+    },
+    "demographicInfo": {
+      "country": "CA",
+      "maritalStatus": "Married",
+      "marriageDate": "2019-08-10",
+      "gender": "Male",
+      "highestEducationLevel": "Bachelor",
+      "religion": "Christian"
+    },
+    "biographicalInfo": {
+      "dateOfBirth": "10-08-1990",
+      "bloodType": "B+",
+      "age": 35
+    },
+    "disabilityInfo": "None",
+    "disabilityCountry": "Canada",
+    "citizenship": [
+      {
+        "citizenship": "CA",
+        "status": "A",
+        "fromDate": "1990-08-10",
+        "toDate": "4712-12-31"
+      }
+    ]
+  }
+}
+
+==================================================================
+
+2. /api/v1/candidate-metadata-auth/metadata/contact-info
+---------------------------------------------------------
+
+Example India Payload
+---------------------
+
+{
+  "contactInfo": {
+    "communication": {
+      "country": "91",
+      "phoneNumber": "9876543210",
+      "areaCode": "080",
+      "number": "9876543210",
+      "emailAddress": "india.candidate@example.com"
+    },
+    "currentAddress": {
+      "AddressLine1": "12 MG Road",
+      "AddressLine2": "Near Metro",
+      "TownOrCity": "Bengaluru",
+      "State": "Karnataka",
+      "Country": "IN",
+      "PostalCode": "560001"
+    },
+    "permanentAddress": {
+      "AddressLine1": "45 Park Street",
+      "TownOrCity": "Kolkata",
+      "State": "West Bengal",
+      "Country": "IN",
+      "PostalCode": "700016"
+    }
+  }
+}
+
+Example US Payload
+-------------------
+
+{
+  "contactInfo": {
+    "communication": {
+      "country": "1",
+      "phoneNumber": "5554321",
+      "areaCode": "212",
+      "number": "5554321",
+      "emailAddress": "us.candidate@example.com",
+      "phoneType": "H1",
+      "fromDate": "2024-01-15",
+      "emailType": "H1"
+    },
+    "currentAddress": {
+      "AddressLine1": "100 Main St",
+      "AddressLine2": "Apt 4B",
+      "TownOrCity": "New York",
+      "State": "NY",
+      "Country": "US",
+      "PostalCode": "10001",
+      "Building": "Empire Suite",
+      "startDate": "2024-01-15"
+    }
+  }
+}
+
+If want to also add Permanent address then use below payload:
+
+{
+  "contactInfo": {
+    "communication": {
+      "country": "1",
+      "phoneNumber": "5554321",
+      "areaCode": "212",
+      "number": "5554321",
+      "emailAddress": "us.candidate@example.com",
+      "phoneType": "H1",
+      "fromDate": "2024-01-15",
+      "emailType": "H1"
+    },
+    "currentAddress": {
+      "AddressLine1": "100 Main St",
+      "TownOrCity": "New York",
+      "State": "NY",
+      "Country": "US",
+      "PostalCode": "10001",
+      "Building": "Empire Suite",
+      "startDate": "2024-01-15"
+    },
+    "permanentAddress": {
+      "AddressLine1": "200 Oak Ave",
+      "TownOrCity": "Jersey City",
+      "State": "NJ",
+      "Country": "US",
+      "PostalCode": "07302",
+      "Building": "Harbor View",
+      "startDate": "2024-01-15"
+    }
+  }
+}
+
+Example Canada Payload
+----------------------
+
+{
+  "contactInfo": {
+    "communication": {
+      "country": "1",
+      "phoneNumber": "5554321",
+      "areaCode": "416",
+      "number": "5554111", (this is getting updated in DHR)
+      "emailAddress": "ca.candidate@gmail.com",
+      "phoneType": "H1",
+      "fromDate": "2024-01-15",
+      "emailType": "H1"
+    },
+    "currentAddress": {
+      "AddressLine1": "100 King St W Lake",
+      "TownOrCity": "Toronto",
+      "State": "ON",
+      "Country": "CA",
+      "PostalCode": "M5H2N2",
+      "Building": "Tower B",
+      "addressType": "HOME", pass "HOME" for Current & "MAIL" for Permanent Address
+      "startDate": "2024-01-15"
+    }
+  }
+} 
+
+In "addressType" pass "HOME" for Current Address & "MAIL" for Permanent Address (depends on User's selection)
+
+==================================================================
+
+3. /api/v1/candidate-metadata-auth/metadata/family-emergency-contacts
+---------------------------------------------------------------------
+
+Example India Payload
+---------------------
+
+{
+  "familyAndEmergencyContacts": [
+    {
+      "basicInfo": {
+        "firstName": "Ramesh",
+        "middleName": "Kumar",
+        "lastName": "Sharma",
+        "relationship": "IN_FR",
+        "gender": "Male",
+        "dateOfBirth": "1970-01-15",
+        "guardianDetails": {
+          "name": "Ramesh Kumar Sharma",
+          "birthDate": "1970-01-15",
+          "address": "12 MG Road, Bengaluru, KA, 560001, IN",
+          "phone": "9876543210"
+        }
+      },
+      "communication": {
+        "phone": "9876543210",
+        "email": "ramesh.sharma@example.com"
+      },
+      "address": {
+        "useMyAddress": false,
+        "enterNewAddress": true,
+        "address": {
+          "AddressLine1": "12 MG Road",
+          "AddressLine2": "Near Metro",
+          "TownOrCity": "Bengaluru",
+          "State": "KA",
+          "Country": "IN",
+          "PostalCode": "560001"
+        }
+      },
+      "isEmergencyContact": true
+    }
+  ]
+}
+
+Example US Payload
+------------------
+
+{
+  "familyAndEmergencyContacts": [
+    {
+      "basicInfo": {
+        "firstName": "Jane",
+        "middleName": "A",
+        "lastName": "Smith",
+        "relationship": "SPOUSE",
+        "gender": "Female",
+        "dateOfBirth": "1985-05-15",
+        "phoneType": "H1",
+        "areaCode": "212",
+        "country": "US"
+      },
+      "communication": {
+        "phone": "5551234567",
+        "email": "jane.smith@example.com"
+      },
+      "address": {
+        "useMyAddress": false,
+        "enterNewAddress": true,
+        "address": {
+          "AddressLine1": "100 Broadway",
+          "AddressLine2": "Apt 4B",
+          "TownOrCity": "New York",
+          "State": "NY",
+          "Country": "US",
+          "PostalCode": "10005"
+        }
+      },
+      "isEmergencyContact": true
+    }
+  ]
+}
+
+Example Canada Payload
+----------------------
+
+{
+  "familyAndEmergencyContacts": [
+    {
+      "basicInfo": {
+        "firstName": "Alex",
+        "middleName": "J",
+        "lastName": "Martin",
+        "prefix": "Mr.",
+        "suffix": "Jr.",
+        "nameAsPerSIN": "Alex Martin",
+        "relationship": "SPOUSE",
+        "gender": "Male",
+        "dateOfBirth": "1988-03-20",
+        "country": "CA"
+      },
+      "communication": {
+        "phone": "5559876543",
+        "phoneType": "H1",
+        "areaCode": "416",
+        "email": "alex.martin@example.com"
+      },
+      "address": {
+        "useMyAddress": false,
+        "enterNewAddress": true,
+        "address": {
+          "AddressLine1": "100 King St W",
+          "AddressLine2": "Suite 200",
+          "TownOrCity": "Toronto",
+          "State": "ON",
+          "Country": "CA",
+          "PostalCode": "M5H1A1"
+        }
+      },
+      "isEmergencyContact": true
+    }
+  ]
+}
+

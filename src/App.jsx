@@ -4,6 +4,7 @@ import About from './components/About'
 import Experience from './components/Experience'
 import Services from './components/Services'
 import Education from './components/Education'
+import Certifications from './components/Certifications'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ const SECTIONS = [
   'experience',
   'services',
   'education',
+  'certifications',
   'projects',
   'contact',
 ]
@@ -31,6 +33,7 @@ export default function App() {
         <Experience />
         <Services />
         <Education />
+        <Certifications />
         <Projects />
         <Contact />
       </main>
