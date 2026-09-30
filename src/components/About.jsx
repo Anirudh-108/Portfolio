@@ -100,7 +100,7 @@ export default function About() {
               rel="noreferrer"
               className="btn btn--outline"
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>

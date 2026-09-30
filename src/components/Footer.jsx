@@ -39,6 +39,12 @@ export default function Footer() {
               <a href="#services">Services</a>
             </li>
             <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#certifications">Certifications</a>
+            </li>
+            <li>
               <a href="#projects">Projects</a>
             </li>
             <li>

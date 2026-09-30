@@ -22,14 +22,11 @@ export default function Services() {
             </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <ul>
+            <div className="service-card__tags">
               {service.points.map((point) => (
-                <li key={point}>
-                  <i className="bx bx-check" />
-                  {point}
-                </li>
+                <span key={point}>{point}</span>
               ))}
-            </ul>
+            </div>
           </article>
         ))}
       </div>
